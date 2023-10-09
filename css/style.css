@@ -183,10 +183,16 @@ first div in the grid  and place it in the grid. */
   grid-row-start: 5;
 }
  /* Step 8: Write the selector/rule property to style the .text-block class. */
- .text-block{
+ /*.text-block{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+}*/
+
+.text-block {
+  display: block;
+  margin: auto;
   text-align: center;
 }
 
@@ -196,8 +202,7 @@ first div in the grid  and place it in the grid. */
   /* Step 9: Write the selector/rule property to style the nav element */
 @media screen and (min-width:800px) {
   nav{
-    display: flex;
-    justify-content: right;
+    text-align: end;
     padding: 30px 0;
   }
 
@@ -221,9 +226,7 @@ first div in the grid  and place it in the grid. */
   }
   .text-block{
     max-height: 250px;
-    align-self: center;
-    align-items: center;
-    overflow: visible;
+    overflow: auto;
   }
 }
  
